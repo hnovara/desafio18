@@ -1,0 +1,37 @@
+Crear una SPA que muestre una lista de películas. Cada película tendrá un título, una descripción y un año de lanzamiento. El usuario podrá buscar películas por título, filtrar películas por año de lanzamiento y agregar nuevas películas a la lista.
+
+Datos de entrada:
+
+* Título de la película (para la búsqueda)
+* Año de lanzamiento (para el filtro)
+* Título, descripción y año de lanzamiento (para agregar nuevas películas)
+
+Datos de salida:
+
+* Lista de películas que coinciden con la búsqueda o el filtro
+* Mensaje de error si no se encuentra ninguna película
+* Lista de películas actualizada después de agregar una nueva película
+
+Requerimientos funcionales:
+
+* Mostrar una lista de películas con título, descripción y año de lanzamiento.
+* Permitir la búsqueda de películas por título.
+* Permitir el filtro de películas por año de lanzamiento.
+* Permitir la adición de nuevas películas a la lista.
+
+Requerimientos no funcionales:
+
+* Utilizar array y objetos para almacenar y manipular datos de películas.
+* Utilizar el objeto Location para controlar las URL en la SPA.
+* Utilizar el objeto History para actualizar el historial del navegador al cambiar de vista en la SPA.
+
+Pasos a realizar:
+
+1.Crear un archivo HTML con una barra de navegación, un área de búsqueda y un formulario para agregar nuevas películas.
+2.Crear un archivo JS que contenga una lista de objetos de películas.
+3.Utilizar JS para mostrar la lista de películas en el área principal del HTML.
+4.Agregar un evento al área de búsqueda para que al ingresar un título de película se filtre y muestre solo las películas que coinciden con ese título.
+5.Agregar un evento al filtro de año para que muestre solo las películas que fueron lanzadas en el año seleccionado.
+6.Agregar un evento al formulario de agregar nuevas películas para que al enviar el formulario se agregue una nueva película a la lista y se actualice la lista en la página.
+7.Utilizar el objeto Location para controlar las URL de la SPA.
+8.Utilizar el objeto History para actualizar el historial del navegador al cambiar de vista en la SPA.
