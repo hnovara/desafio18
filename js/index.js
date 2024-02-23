@@ -6,13 +6,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const imageInput = document.getElementById('imageInput');
     
     let movies = [
-      { title: 'Titanic', description: 'Romance', year: 1997 },
-      { title: 'Inception', description: 'Ciencia ficción', year: 2009 },
-      { title: 'Avatar', description: 'Acción / Ciencia ficción', year: 2010 },
-      { title: 'Avengers: Endgame', description: 'Acción / Ciencia ficción', year: 2019 },
-      { title: 'El juego de Ender', description: 'Acción / Ciencia ficción', year: 2010 },
-      { title: 'Sueño de fuga', description: 'Suspenso / Crimen', year: 1994 }
+      { title: 'Titanic', description: 'Romance', year: 1997, image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/VMOt5scbGmBKDvkfHjZN6Ki54i.jpg' },
+      { title: 'Origen', description: 'Ciencia ficción', year: 2010, image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/tXQvtRWfkUUnWJAn2tN3jERIUG.jpg' },
+      { title: 'Avatar', description: 'Acción / Ciencia ficción', year: 2010, image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/tXmTHdrZgNsULqCbThK2Dt2X9Wt.jpg' },
+      { title: 'Vengadores: Endgame', description: 'Acción / Ciencia ficción', year: 2019, image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/br6krBFpaYmCSglLBWRuhui7tPc.jpg' },
+      { title: 'El juego de Ender', description: 'Acción / Ciencia ficción', year: 2010, image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/7jHrYKpG3gHRFtTvLcDp75OSrZo.jpg' },
+      { title: 'Sueño de fuga', description: 'Suspenso / Crimen', year: 1994, image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/rL1YQLqUtHK3HdQyenHvuOCuWzO.jpg' }
     ];
+
+ 
     
     function renderMovies(moviesArray) {
         moviesList.innerHTML = '';
