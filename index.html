@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <nav>
+        <h1>Lista de Películas</h1>
+        <input type="text" id="searchInput" placeholder="Buscar por título">
+        <select id="yearFilter">
+          <option value="">Filtrar por año</option>
+        </select>
+      </nav>
+      <main id="moviesList">
+        <!-- Aquí se mostrarán las películas -->
+      </main>
+      <form id="addMovieForm">
+        <input type="text" id="titleInput" placeholder="Título" required>
+        <input type="text" id="descriptionInput" placeholder="Descripción" required>
+        <input type="number" id="yearInput" placeholder="Año de lanzamiento" required>
+        <input type="file" id="imageInput" accept="image/*" required>
+        <button type="submit">Agregar Película</button>
+      </form>
 
     <script src="./js/index.js"></script>
 </body>
