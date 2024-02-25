@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
       { title: 'Sueño de fuga', description: 'Suspenso / Crimen', year: 1994, image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/rL1YQLqUtHK3HdQyenHvuOCuWzO.jpg' }
     ];
 
- 
-    
     function renderMovies(moviesArray) {
         moviesList.innerHTML = '';
         moviesArray.forEach(movie => {
@@ -24,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
           movieElement.innerHTML = `
             <h2>${movie.title}</h2>
             <img src="${movie.image}" alt="${movie.title}">
-            <p><strong>Description:</strong> ${movie.description}</p>
-            <p><strong>Year:</strong> ${movie.year}</p>
+            <p><strong>Descripción:</strong> ${movie.description}</p>
+            <p><strong>Año:</strong> ${movie.year}</p>
           `;
           moviesList.appendChild(movieElement);
         });
@@ -77,14 +75,12 @@ document.addEventListener('DOMContentLoaded', function () {
         searchInput.value = searchTerm;
         yearFilter.value = yearFilterValue;
     
-        filterMovies(); // Aplicar el filtro al cargar la página según los parámetros de la URL
+        filterMovies(); 
       }
     
-      // Manejar los eventos de búsqueda y filtrado
       searchInput.addEventListener('input', filterMovies);
       yearFilter.addEventListener('change', filterMovies);
     
-      // Manejar el evento de envío del formulario para agregar una nueva película
       addMovieForm.addEventListener('submit', function (event) {
         event.preventDefault();
         
@@ -108,7 +104,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
     
-      // Al cargar la página, renderizar las películas y parsear la consulta de la URL
       renderMovies(movies);
       populateYearFilter();
       parseQueryString();
